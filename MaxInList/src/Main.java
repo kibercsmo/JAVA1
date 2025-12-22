@@ -1,14 +1,22 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        int num;
+        Scanner input = new Scanner(System.in);
         ArrayList<Double> numbers = new ArrayList<Double>();
-        numbers.add(3.1);
-        numbers.add(2.4);
-        numbers.add(-5.7);
-        numbers.add(7.9);
-        numbers.add(-9.3);
+
+        System.out.print("Колличество цифер в массиве: ");
+        num = input.nextInt();
+
+        for (int i = 0; i < num; i++){
+            System.out.print(i+1 + ". ");
+            numbers.add(input.nextDouble());
+        }
+
         MaxNum(numbers);
     }
 
