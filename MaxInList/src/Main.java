@@ -17,10 +17,10 @@ public class Main {
             numbers.add(input.nextDouble());
         }
 
-        MaxNum(numbers);
+        MinNum(numbers);
     }
 
-    public static void MaxNum(ArrayList<Double> numbers){
-        System.out.println("Наибольше число в списке: " + Collections.max(numbers));
+    public static void MinNum(ArrayList<Double> numbers){
+        System.out.println("Наименьшее число в списке: " + Collections.min(numbers));
     }
 }
